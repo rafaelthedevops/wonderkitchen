@@ -5,7 +5,7 @@
         = @recipe.errors.count
         Prevented this recipe from saving
       %ul
-        - @recipe.errors_full_messages.each do |msg|
+        - @recipe.errors.full_messages.each do |msg|
           %li= msg
   .panel-body
     = f.input :title, input_html: { class: 'form-control' }
@@ -25,7 +25,7 @@
         %h3 Directions
         #directions
           = f.simple_fields_for :directions do |direction|
-            = render 'directions_fields', f: direction
+            = render 'direction_fields', f: direction
           .links
             = link_to_add_association 'Add Direction', f, :directions, class: "btn btn-default add-button"
 
