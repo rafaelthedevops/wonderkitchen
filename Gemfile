@@ -14,7 +14,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'haml'
 gem 'simple_form'
 gem 'paperclip'
-gem 'bootstrap', '~> 4.0.0.alpha5'
+gem 'bootstrap-sass'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
