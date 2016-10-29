@@ -31,6 +31,7 @@ class RecipesController < ApplicationController
       redirect_to @recipe
     else
       render 'edit'
+    end
   end 
 
   def destroy
